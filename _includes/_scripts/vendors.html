@@ -46,5 +46,6 @@
   {% assign name = name_internal[0] | strip  %}
   {% assign internal = name_internal[1] | strip  %}
   {% assign internal_script = site.vendors._internal | append: '/' | append: internal | relative_url %}
-  <script type="text/javascript" src="{{ site.vendors[name] | default: internal_script }}"></script>
+<script type="text/javascript" src="{{ site.vendors[name] | default: internal_script }}"></script>
 {% endfor %}
+<script type="text/javascript" src="/assets/js/src/particle-text.js"></script>
